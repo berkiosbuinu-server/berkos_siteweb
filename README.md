@@ -55,3 +55,11 @@ Au moment de la préparation du site, la page Releases GitHub indique qu'aucune 
 - `download.css` : présentation responsive de la page.
 
 Tous les boutons « Télécharger » de la page d'accueil conduisent maintenant à `download.html`. Pour activer les deux téléchargements, publier une release dans `berkiosbuinu-server/berkos_siteweb` et y joindre les deux installateurs Windows, un fichier `.msi` et un fichier `.exe`.
+
+
+## Guide d’installation
+
+- `installation.html` : guide en français avec les prérequis, les étapes d’installation, les commandes de diagnostic et les liens officiels pour Flutter, Node.js, Android Studio, Visual Studio Build Tools et Git.
+- `installation.css` : styles responsive complémentaires au thème du site.
+- Les liens vers le guide sont présents dans la navigation de la page d’accueil et du centre de téléchargement.
+- Le guide distingue l’installation du Studio des outils nécessaires à la génération/compilation d’applications. Les chemins d’installation des dépendances ne sont pas codés en dur.

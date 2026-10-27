@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <meta name="description" content="Guide d’installation de BERKIOS GRAPHIC : téléchargement, prérequis, Flutter, Node.js, Android Studio et outils de compilation.">
+  <title>Guide d’installation — BERKIOS GRAPHIC</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="installation.css">
+</head>
+<body class="installation-page">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header guide-header">
+    <a class="brand" href="index.html" aria-label="BERKIOS GRAPHIC, accueil">
+      <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+      <span>BERKIOS <b>GRAPHIC</b></span>
+    </a>
+    <nav class="guide-nav" aria-label="Navigation principale">
+      <a href="download.html">Téléchargements</a>
+      <a href="index.html">← Retour au site</a>
+    </nav>
+  </header>
+
+  <main class="guide-main">
+    <div class="eyebrow"><span class="live-dot"></span> DOCUMENTATION · PREMIERS PAS</div>
+    <h1>Guide d’<span class="gradient-text">installation</span></h1>
+    <p class="guide-lead">Installez BERKIOS GRAPHIC, puis préparez les outils nécessaires selon ce que vous souhaitez faire : utiliser le Studio, créer des applications Flutter ou compiler pour Windows, Android et le Web.</p>
+
+    <div class="guide-callout"><strong>À retenir</strong><p>Pour simplement installer et ouvrir BERKIOS GRAPHIC, commencez par télécharger l’installateur Windows depuis GitHub. Flutter, Node.js et Android Studio sont surtout nécessaires lorsque vous utilisez les fonctions de développement ou de génération d’applications. Les besoins exacts dépendent de la cible choisie.</p></div>
+
+    <section class="guide-section" id="prerequis">
+      <div class="section-label">01 / AVANT DE COMMENCER</div>
+      <h2>Prérequis</h2>
+      <div class="guide-cards">
+        <article class="guide-card"><span class="guide-number">A</span><h3>Système d’exploitation</h3><p>Un ordinateur Windows 10 ou Windows 11 64 bits est recommandé pour l’installateur Windows publié sur la page de téléchargement.</p></article>
+        <article class="guide-card"><span class="guide-number">B</span><h3>Connexion Internet</h3><p>Recommandée pour télécharger l’installateur, récupérer les dépendances de projet et installer les outils de développement.</p></article>
+        <article class="guide-card"><span class="guide-number">C</span><h3>Droits d’installation</h3><p>Selon la configuration de Windows, vous devrez peut-être autoriser l’installation ou saisir les identifiants d’un compte administrateur.</p></article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="installer">
+      <div class="section-label">02 / INSTALLER BERKIOS GRAPHIC</div>
+      <h2>Installation du Studio</h2>
+      <ol class="guide-steps">
+        <li><span>1</span><div><h3>Télécharger la version publiée</h3><p>Ouvrez le <a href="download.html">centre de téléchargement</a>. Les fichiers MSI et EXE sont récupérés depuis les ressources de la dernière release GitHub publiée.</p><a class="guide-button" href="download.html">Accéder aux téléchargements <b>↗</b></a></div></li>
+        <li><span>2</span><div><h3>Lancer l’installateur</h3><p>Ouvrez le fichier <code>.exe</code> ou <code>.msi</code> téléchargé, puis suivez les étapes affichées. Si Windows affiche une demande de confirmation, vérifiez que le fichier provient bien de la release officielle avant de continuer.</p></div></li>
+        <li><span>3</span><div><h3>Ouvrir le Studio</h3><p>À la fin de l’installation, lancez BERKIOS GRAPHIC depuis le menu Démarrer ou le raccourci créé par l’installateur.</p></div></li>
+        <li><span>4</span><div><h3>Vérifier les fonctions de génération</h3><p>Si vous voulez compiler une application, installez les outils correspondant à votre cible dans la section suivante. Redémarrez le Studio après toute modification des variables d’environnement.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="dependances">
+      <div class="section-label">03 / OUTILS DE DÉVELOPPEMENT</div>
+      <h2>Dépendances à installer</h2>
+      <p class="section-intro">Installez uniquement les outils nécessaires à votre usage. Les liens ci-dessous pointent vers les sites officiels des éditeurs.</p>
+      <div class="dependency-list">
+        <article class="dependency-card"><div class="dependency-head"><div><span class="dependency-tag required">Applications Flutter</span><h3>Flutter SDK</h3></div><span class="dependency-symbol">F</span></div><p>Nécessaire pour générer et compiler des applications Flutter. Téléchargez le SDK, extrayez-le dans un dossier de votre choix et ajoutez son dossier <code>bin</code> au <code>PATH</code> de votre environnement. Berkios Graphic ne doit pas supposer un emplacement fixe.</p><p class="verify">Vérification dans un terminal : <code>flutter --version</code>, puis <code>flutter doctor -v</code>.</p><a class="official-link" href="https://docs.flutter.dev/get-started/install" target="_blank" rel="noopener noreferrer">Installation officielle de Flutter <span>↗</span></a></article>
+        <article class="dependency-card"><div class="dependency-head"><div><span class="dependency-tag required">Bridge et outils JavaScript</span><h3>Node.js (version LTS)</h3></div><span class="dependency-symbol">JS</span></div><p>Requis pour exécuter les outils et le bridge Node.js de Berkios Graphic lorsqu’ils sont utilisés. Privilégiez la version LTS compatible avec le projet.</p><p class="verify">Vérification : <code>node --version</code> et <code>npm --version</code>.</p><a class="official-link" href="https://nodejs.org/en/download" target="_blank" rel="noopener noreferrer">Télécharger Node.js <span>↗</span></a></article>
+        <article class="dependency-card"><div class="dependency-head"><div><span class="dependency-tag target">Applications Android</span><h3>Android Studio</h3></div><span class="dependency-symbol">A</span></div><p>Recommandé pour le SDK Android, les outils de plateforme et les émulateurs. Dans SDK Manager, installez les composants Android demandés par la version de Flutter utilisée et acceptez les licences requises.</p><p class="verify">Vérification : <code>flutter doctor -v</code>. Les chemins Android SDK peuvent varier selon l’installation.</p><a class="official-link" href="https://developer.android.com/studio" target="_blank" rel="noopener noreferrer">Télécharger Android Studio <span>↗</span></a></article>
+        <article class="dependency-card"><div class="dependency-head"><div><span class="dependency-tag target">Compilation Windows</span><h3>Visual Studio Build Tools</h3></div><span class="dependency-symbol">VS</span></div><p>Nécessaire pour compiler les applications Flutter de bureau pour Windows. Installez la charge de travail <strong>Développement Desktop en C++</strong> et les composants Windows SDK requis.</p><a class="official-link" href="https://visualstudio.microsoft.com/downloads/" target="_blank" rel="noopener noreferrer">Télécharger Visual Studio / Build Tools <span>↗</span></a></article>
+        <article class="dependency-card"><div class="dependency-head"><div><span class="dependency-tag optional">Code source</span><h3>Git</h3></div><span class="dependency-symbol">git</span></div><p>Utile pour récupérer le code source, mettre à jour un dépôt et collaborer sur les projets. Certaines installations de Flutter ou certains workflows peuvent aussi s’appuyer sur Git.</p><p class="verify">Vérification : <code>git --version</code>.</p><a class="official-link" href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">Télécharger Git <span>↗</span></a></article>
+      </div>
+      <div class="guide-callout subtle"><strong>Important pour le PATH</strong><p>Ne copiez pas un chemin d’exemple trouvé dans ce guide comme s’il était universel. Le dossier d’installation dépend de chaque ordinateur. Ajoutez le chemin réel de l’outil à la variable d’environnement <code>PATH</code>, puis fermez et relancez le Studio pour qu’il récupère les nouvelles variables.</p></div>
+    </section>
+
+    <section class="guide-section" id="verification">
+      <div class="section-label">04 / DIAGNOSTIC</div>
+      <h2>Vérifier l’environnement</h2>
+      <p>Ouvrez PowerShell ou l’invite de commandes Windows et exécutez les commandes correspondant aux outils installés :</p>
+      <pre class="command-block"><code>where.exe flutter
+flutter --version
+flutter doctor -v
+where.exe node
+node --version
+npm --version</code></pre>
+      <p>Si une commande n’est pas reconnue, vérifiez le <code>PATH</code> et redémarrez le terminal. Si PowerShell ne lance pas un outil Windows, essayez également l’invite de commandes (CMD). Le bridge doit rechercher l’outil dans l’environnement de l’utilisateur et ne doit pas coder en dur le chemin d’installation.</p>
+      <div class="guide-callout"><strong>Une compilation échoue ?</strong><p>Consultez d’abord la première erreur réelle dans le journal. Une erreur Dart dans le code généré doit être corrigée dans le générateur de Berkios Graphic ; une erreur de détection doit être diagnostiquée séparément de l’échec de compilation.</p></div>
+    </section>
+
+    <section class="guide-section guide-next">
+      <div><div class="section-label">05 / PRÊT À DÉMARRER ?</div><h2>Téléchargez la version disponible.</h2><p>Retrouvez les installateurs Windows publiés et les notes de version dans GitHub Releases.</p></div>
+      <div class="next-actions"><a class="button button-primary" href="download.html">Centre de téléchargement <span>↓</span></a><a class="button button-secondary" href="https://github.com/berkiosbuinu-server/berkos_siteweb/releases" target="_blank" rel="noopener noreferrer">Toutes les releases GitHub <span>↗</span></a></div>
+    </section>
+  </main>
+  <footer class="guide-footer"><a href="index.html">BERKIOS GRAPHIC</a><span>© <span id="year"></span> · Guide d’installation</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
