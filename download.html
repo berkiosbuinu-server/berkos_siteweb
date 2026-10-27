@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <meta name="description" content="Téléchargez BERKIOS GRAPHIC pour Windows en format MSI ou EXE.">
+  <title>Télécharger BERKIOS GRAPHIC</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="download.css">
+</head>
+<body class="download-page">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header download-header">
+    <a class="brand" href="index.html" aria-label="BERKIOS GRAPHIC, accueil">
+      <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+      <span>BERKIOS <b>GRAPHIC</b></span>
+    </a>
+    <a class="back-link" href="index.html">← Retour au site</a>
+  </header>
+  <main class="download-main">
+    <div class="eyebrow"><span class="live-dot"></span> CENTRE DE TÉLÉCHARGEMENT</div>
+    <h1>Télécharger <span class="gradient-text">BERKIOS GRAPHIC</span></h1>
+    <p class="download-intro">Choisissez le format Windows qui vous convient. Les liens sont récupérés depuis la dernière release publiée sur GitHub.</p>
+    <section class="platform-card" aria-labelledby="windows-title">
+      <div class="platform-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" role="img" aria-label="Logo Windows">
+          <path d="M4 13.5 28 10v21H4z" fill="currentColor"/><path d="M32 9.4 60 5v26H32z" fill="currentColor"/><path d="M4 34h24v21L4 51.5z" fill="currentColor"/><path d="M32 34h28v25l-28-4.3z" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="platform-copy">
+        <div class="platform-kicker">PLATEFORME</div>
+        <h2 id="windows-title">Télécharger pour Windows</h2>
+        <p>Compatible Windows 10 et Windows 11 (64 bits, selon la version publiée).</p>
+      </div>
+      <span class="platform-badge">Windows</span>
+    </section>
+    <section class="installer-grid" aria-label="Formats d'installation Windows">
+      <article class="installer-card">
+        <div class="file-type">MSI</div>
+        <h3>Installateur MSI</h3>
+        <p>Format Windows Installer, pratique pour l'installation standard et le déploiement en entreprise.</p>
+        <a id="download-msi" class="button button-primary installer-button disabled" href="#" aria-disabled="true">Chargement… <span>↓</span></a>
+        <p id="msi-detail" class="file-detail">Recherche du fichier .msi…</p>
+      </article>
+      <article class="installer-card">
+        <div class="file-type file-type-exe">EXE</div>
+        <h3>Installateur EXE</h3>
+        <p>Programme d'installation Windows classique, à lancer après téléchargement.</p>
+        <a id="download-exe" class="button button-primary installer-button disabled" href="#" aria-disabled="true">Chargement… <span>↓</span></a>
+        <p id="exe-detail" class="file-detail">Recherche du fichier .exe…</p>
+      </article>
+    </section>
+    <p id="release-status" class="release-status" role="status" aria-live="polite">Connexion à GitHub pour vérifier la dernière version…</p>
+    <div class="release-fallback"><a id="releases-link" href="https://github.com/berkiosbuinu-server/berkos_siteweb/releases" target="_blank" rel="noopener noreferrer">Voir toutes les versions sur GitHub ↗</a></div>
+    <p class="download-help">Les formats MSI et EXE apparaîtront dès qu'ils seront joints comme fichiers (Assets) à une release GitHub.</p>
+  </main>
+  <footer class="download-footer"><a href="index.html">BERKIOS GRAPHIC</a><span>© <span id="year"></span> · Créativité, technologie, possibilités</span></footer>
+  <script src="script.js"></script>
+  <script src="download.js"></script>
+</body>
+</html>
