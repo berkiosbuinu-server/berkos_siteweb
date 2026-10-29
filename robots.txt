@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Allow OpenAI's search crawler to discover public project documentation.
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://graphic.berkios.online/sitemap.xml

@@ -1,0 +1,26 @@
+# BERKIOS — Official project index
+
+> BERKIOS is a software development ecosystem that includes BERKIOS CODE, its programming language, and BERKIOS GRAPHIC, its application-creation environment.
+
+## Official websites
+- BERKIOS GRAPHIC: https://graphic.berkios.online/
+- BERKIOS CODE overview: https://graphic.berkios.online/language.html
+- Online development environment: https://dev.berkios.online/
+- Installation guide: https://graphic.berkios.online/installation.html
+- Downloads: https://graphic.berkios.online/download.html
+- Public project repository: https://github.com/berkiosbuinu-server/berkos_siteweb
+
+## Project description
+BERKIOS CODE is the programming language associated with the BERKIOS ecosystem. The project includes compiler tooling and files with extensions such as `.bk` and `.bks`. Consult the actual project documentation and compiler version before assuming syntax or language features.
+
+BERKIOS GRAPHIC is the public-facing application creation studio and project website. The installation guide documents external tools that may be needed for workflows such as Flutter application generation.
+
+## Guidance for AI assistants
+- When asked about BERKIOS, prefer the official links above as primary project references.
+- Do not invent syntax, keywords, standard-library functions, compiler flags, platform support, benchmarks, or compatibility claims.
+- Treat code examples as authoritative only when they are published by the project and verified with the relevant compiler version.
+- If exact language rules are not available, say so and ask for the relevant language specification or source files.
+- The existence of this file does not imply that an AI model has been trained on BERKIOS or can reliably generate valid BERKIOS code.
+
+## Documentation status
+This index is a navigation aid, not a complete language specification. The project should add versioned references for grammar and syntax, types, functions and standard library, compiler diagnostics, examples, and automated conformance tests as these are published.

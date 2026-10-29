@@ -63,3 +63,22 @@ Tous les boutons « Télécharger » de la page d'accueil conduisent maintenant 
 - `installation.css` : styles responsive complémentaires au thème du site.
 - Les liens vers le guide sont présents dans la navigation de la page d’accueil et du centre de téléchargement.
 - Le guide distingue l’installation du Studio des outils nécessaires à la génération/compilation d’applications. Les chemins d’installation des dépendances ne sont pas codés en dur.
+
+
+## Visibilité du langage BERKIOS et documentation IA
+
+- `language.html` : page publique dédiée à BERKIOS CODE, accessible aux visiteurs et aux robots d’indexation.
+- `llms.txt` : index de navigation pour les assistants et outils qui choisissent de le consulter. Il ne garantit pas l’apprentissage ou la reconnaissance du langage par les IA.
+- `robots.txt` : règles publiques d’exploration, avec accès autorisé aux pages et à `OAI-SearchBot`.
+- `sitemap.xml` : liste des pages principales à soumettre aux moteurs de recherche.
+- `index.html` : métadonnées de partage, données structurées et liens vers la page BERKIOS CODE.
+
+### Après déploiement
+
+1. Déployer les fichiers dans le répertoire web de `graphic.berkios.online`.
+2. Vérifier dans un navigateur les URL `/language.html`, `/llms.txt`, `/robots.txt` et `/sitemap.xml`.
+3. Vérifier que le serveur ne bloque pas les robots dans sa configuration, son CDN ou son pare-feu.
+4. Ajouter le domaine dans Google Search Console et soumettre `https://graphic.berkios.online/sitemap.xml`.
+5. Compléter la page langage avec la grammaire exacte, les exemples compilables, la bibliothèque standard, les erreurs et les versions du compilateur. Ne publier que des exemples vérifiés.
+
+L’indexation et l’apparition dans les réponses des moteurs ou assistants IA ne sont jamais garanties. Le fichier `llms.txt` est une aide de navigation, pas une inscription universelle aux modèles d’IA.
