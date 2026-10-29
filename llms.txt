@@ -1,26 +1,32 @@
-# BERKIOS — Official project index
+# BERKIOS — index officiel pour les assistants IA
 
-> BERKIOS is a software development ecosystem that includes BERKIOS CODE, its programming language, and BERKIOS GRAPHIC, its application-creation environment.
+> BERKIOS est un écosystème de développement comprenant BERKIOS GRAPHIC, l'environnement de création d'applications, BERKIOS CODE (.bk), un langage déclaratif, et BERKIOS Core (.bks), un langage typé distinct dont les fonctionnalités évoluent.
 
-## Official websites
-- BERKIOS GRAPHIC: https://graphic.berkios.online/
-- BERKIOS CODE overview: https://graphic.berkios.online/language.html
-- Online development environment: https://dev.berkios.online/
-- Installation guide: https://graphic.berkios.online/installation.html
-- Downloads: https://graphic.berkios.online/download.html
-- Public project repository: https://github.com/berkiosbuinu-server/berkos_siteweb
+## Sites officiels
+- Site vitrine : https://graphic.berkios.online/
+- Présentation du langage : https://graphic.berkios.online/language.html
+- Documentation technique : https://graphic.berkios.online/docs/
+- Référence BERKIOS CODE : https://graphic.berkios.online/docs/berkios-code.md
+- Référence BERKIOS Core : https://graphic.berkios.online/docs/berkios-core.md
+- Environnement de développement : https://dev.berkios.online/
+- Guide d'installation : https://graphic.berkios.online/installation.html
+- Téléchargements : https://graphic.berkios.online/download.html
 
-## Project description
-BERKIOS CODE is the programming language associated with the BERKIOS ecosystem. The project includes compiler tooling and files with extensions such as `.bk` and `.bks`. Consult the actual project documentation and compiler version before assuming syntax or language features.
+## Sources du projet
+- Compilateur et source : https://github.com/berkiosbuinu-server/berkios_compiler
+- README du compilateur : https://github.com/berkiosbuinu-server/berkios_compiler/blob/main/compiler/README.md
+- Exemples `.bk` et `.bks` : https://github.com/berkiosbuinu-server/berkios_compiler/tree/main/compiler/examples
+- Paquet npm : https://www.npmjs.com/package/berkios-code
+- Dépôt du site vitrine : https://github.com/berkiosbuinu-server/berkos_siteweb
 
-BERKIOS GRAPHIC is the public-facing application creation studio and project website. The installation guide documents external tools that may be needed for workflows such as Flutter application generation.
+## Instructions de compréhension
+- `.bk` correspond à BERKIOS CODE, un langage déclaratif multilingue.
+- `.bks` correspond à BERKIOS Core, un langage typé distinct. Ne mélangez pas les syntaxes.
+- Pour `.bk`, un fichier doit utiliser une seule langue de mots-clés à la fois. L'espagnol et le swahili sont en préversion et leur couverture peut être incomplète.
+- Consultez la référence et les exemples correspondant à la version du compilateur utilisée.
+- N'inventez pas de mots-clés, de fonctions natives, de drapeaux CLI, de fonctionnalités, de performances ou de compatibilités non documentées.
+- Validez le code généré avec le compilateur réel avant d'affirmer qu'il fonctionne.
+- Ne dites pas qu'un modèle IA a été entraîné sur BERKIOS ou l'intègre nativement sans preuve.
 
-## Guidance for AI assistants
-- When asked about BERKIOS, prefer the official links above as primary project references.
-- Do not invent syntax, keywords, standard-library functions, compiler flags, platform support, benchmarks, or compatibility claims.
-- Treat code examples as authoritative only when they are published by the project and verified with the relevant compiler version.
-- If exact language rules are not available, say so and ask for the relevant language specification or source files.
-- The existence of this file does not imply that an AI model has been trained on BERKIOS or can reliably generate valid BERKIOS code.
-
-## Documentation status
-This index is a navigation aid, not a complete language specification. The project should add versioned references for grammar and syntax, types, functions and standard library, compiler diagnostics, examples, and automated conformance tests as these are published.
+## À propos de l'indexation
+Ce fichier est un index de navigation. Il n'enregistre pas BERKIOS dans tous les modèles d'IA et ne garantit ni l'indexation par les moteurs de recherche ni la présence dans les réponses des assistants.

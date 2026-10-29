@@ -82,3 +82,10 @@ Tous les boutons « Télécharger » de la page d'accueil conduisent maintenant 
 5. Compléter la page langage avec la grammaire exacte, les exemples compilables, la bibliothèque standard, les erreurs et les versions du compilateur. Ne publier que des exemples vérifiés.
 
 L’indexation et l’apparition dans les réponses des moteurs ou assistants IA ne sont jamais garanties. Le fichier `llms.txt` est une aide de navigation, pas une inscription universelle aux modèles d’IA.
+
+
+## Documentation officielle pour développeurs et assistants IA
+
+Le dossier `docs/` contient le portail technique public, les références BERKIOS CODE et BERKIOS Core, ainsi que des exemples tirés du dépôt du compilateur. Déployer ce dossier avec le reste du site afin que les URLs `/docs/`, `/docs/berkios-code.md` et `/docs/berkios-core.md` fonctionnent.
+
+Le fichier `llms.txt` référence la documentation et les dépôts officiels. Il s'agit d'un index informatif : il ne garantit pas que tous les modèles IA connaissent BERKIOS ou que les moteurs indexent toutes les pages.
